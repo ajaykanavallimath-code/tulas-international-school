@@ -1,0 +1,38 @@
+export const campusFacilities = [
+  {
+    id: 'residential-dorms',
+    title: 'Modern Climate-Controlled Hostels',
+    tagline: 'A true home away from home with round-the-clock pastoral mentorship.',
+    description: 'Separate, secure residential blocks for boys and girls equipped with air-conditioning, study desks, ergonomic beds, recreation lounges, and resident house parents.',
+    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=800&auto=format&fit=crop',
+    icon: 'Building2',
+    stats: 'Separate Boys & Girls Blocks',
+  },
+  {
+    id: 'dining-nutrition',
+    title: 'Central Multi-Cuisine Dining Hall',
+    tagline: '100% Pure vegetarian, hygienic, and diet-balanced meals.',
+    description: 'A spacious, spotless dining hall serving fresh, wholesome, multi-cuisine vegetarian meals designed by nutritionists to nourish growing minds and active young athletes.',
+    image: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=800&auto=format&fit=crop',
+    icon: 'Utensils',
+    stats: '4 Wholesome Meals Daily',
+  },
+  {
+    id: 'health-infirmary',
+    title: '24/7 Medical Care & Infirmary',
+    tagline: 'Resident doctors, trained nurses, and on-call ambulance.',
+    description: 'On-campus fully equipped infirmary with round-the-clock qualified medical staff, emergency oxygen, observation beds, and tie-ups with leading super-specialty hospitals in Dehradun.',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop',
+    icon: 'Stethoscope',
+    stats: '24/7 Resident Doctor',
+  },
+  {
+    id: 'library-media',
+    title: 'Knowledge Resource & Digital Library',
+    tagline: 'Over 10,000+ titles, digital archives, and quiet reading pods.',
+    description: 'A serene architectural library housing extensive reference encyclopedias, international journals, digital Kindle stations, and collaborative study pods.',
+    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop',
+    icon: 'Library',
+    stats: '10,000+ Volume Library',
+  },
+];

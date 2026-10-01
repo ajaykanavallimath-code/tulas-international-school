@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-primary: #FAFAF9;
+    --color-text-primary: #0F172A;
+    --color-accent-crimson: #9E1127;
+    --color-accent-gold: #C89B3C;
+  }
+
+  .dark {
+    --color-bg-primary: #070B14;
+    --color-text-primary: #F8FAFC;
+    --color-accent-crimson: #C41935;
+    --color-accent-gold: #E5C07B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f172a15;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #060a12;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #9E112777;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9E1127;
+  }
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass-panel {
+  background: rgba(17, 25, 44, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Gold shimmer gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E5C07B 0%, #C89B3C 50%, #9B701F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-crimson-gradient {
+  background: linear-gradient(135deg, #C41935 0%, #9E1127 50%, #630814 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle grid backdrop for hero & sections */
+.bg-subtle-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(158, 17, 39, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(158, 17, 39, 0.04) 1px, transparent 1px);
+}
+
+.dark .bg-subtle-grid {
+  background-image: 
+    linear-gradient(to right, rgba(200, 155, 60, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 155, 60, 0.05) 1px, transparent 1px);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
